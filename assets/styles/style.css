@@ -1,0 +1,134 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  position: absolute;
+}
+
+.container {
+  height: 800px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+}
+
+header, section {
+  scroll-snap-align: end;
+  scroll-snap-align: start;
+}
+
+header {
+  background-color: #eeced4;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 599px) {
+  header h1 {
+    font-size: 2rem;
+  }
+}
+
+header p {
+  font-size: 2rem;
+}
+
+@media (max-width: 599px) {
+  header p {
+    font-size: 1rem;
+  }
+}
+
+header a[href$=bottom] {
+  position: relative;
+  top: 200px;
+  color: white;
+  letter-spacing: 3px;
+}
+
+section {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+}
+
+section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.7rem;
+}
+
+@media (max-width: 599px) {
+  section h1 {
+    font-size: 1.5rem;
+  }
+}
+
+section p {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 599px) {
+  section p {
+    max-width: 80%;
+    margin: 0 auto;
+    font-size: 1rem;
+  }
+}
+
+section img {
+  width: 70%;
+  height: 70%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section img:hover {
+  opacity: .63;
+  cursor: pointer;
+}
+
+section a[href$=top] {
+  position: relative;
+  color: black;
+  letter-spacing: 3px;
+}
+/*# sourceMappingURL=style.css.map */

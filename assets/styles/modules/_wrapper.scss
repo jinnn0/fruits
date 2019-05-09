@@ -1,0 +1,12 @@
+.wrapper {
+  height: 100vh;
+  max-width: 1200px;
+  padding-left: 18px;
+  padding-right: 18px;
+  margin: 0 auto; 
+
+    @include phone-only {
+      padding-left: 0;
+      padding-right: 0;
+    }
+}       

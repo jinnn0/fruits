@@ -1,0 +1,60 @@
+.container {
+  height: 100vh;
+  // overflow-y: scroll; 
+  // scroll-behavior: smooth;
+  scroll-snap-type: y mandatory; 
+}  
+
+header, section {
+  scroll-snap-align: end;
+  scroll-snap-align: start;
+}
+
+
+header {
+  background-color: rgb(238, 206, 212);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+      h1 { 
+        margin-bottom: 1rem;
+
+        @include phone-only {
+          font-size: 2rem;
+        }
+        @include tablet-portrait {  
+          font-size: 2.6rem;
+        }
+        @include tablet-landscape { 
+          font-size: 4rem;
+        }
+      }
+
+      p {
+        @include phone-only {
+          font-size: 1rem;
+        }
+        @include tablet-portrait {  
+          font-size: 1.6rem;
+        }
+        @include tablet-landscape { 
+          font-size: 2rem;
+        }
+      }
+
+      a[href$=bottom] {
+        position: relative;
+        top: 200px;
+        color: white;
+        letter-spacing: 3px;
+      }
+}
+
+
+
+
+
